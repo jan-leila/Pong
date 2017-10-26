@@ -1,7 +1,6 @@
 import Tkinter
 
 def drawTimer(canvas,timeLeft):
-    #this thing is done
     canvas.create_text(640,15,text=str(timeLeft))
 
 #def drawPlayer1Health(canvas,player):

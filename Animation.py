@@ -7,8 +7,9 @@ def drawBackground(canvas):
     
 
 def drawPlayer1(canvas,player):
-    #draw player one's sprite
-    canvas.create_arc(player.x, player.y, player.x, player.y + 320)
+    #change player one's sprite
+    player.updateSprite({canvas.create_arc(player.x, player.y, player.x, player.y + 320)})
+    print ""
 
 def drawPlayer2(canvas,player):
     #draw player two's sprite
