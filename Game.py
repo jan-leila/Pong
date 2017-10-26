@@ -44,8 +44,9 @@ class player:
         self.animation = 0
         self.collitionBox = collitionBox(x,y,128,320,'#00ff55')
         self.hitBox = collitionBox(x - 128,y + 32,128,32,'#ff0000')
-        self.sprite = [1]
-        self.sprite[0] = canvas.create_arc(self.x, self.y, self.x, self.y + 320)
+        self.sprite = [11]
+        for line in self.sprite:
+            line = self.sprite[0] = canvas.create_arc(self.x, self.y, self.x, self.y + 320)
     def move(self,x,y):
         self.x = self.x + x
         self.y = self.y + y
