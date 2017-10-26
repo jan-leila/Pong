@@ -52,7 +52,8 @@ class player:
         self.y = self.y + y
         self.collitionBox.translate(x,y)
         self.hitBox.translate(x,y)
-        canvas.move(self.sprite, x,y)
+        for line in self.sprite:
+            canvas.move(line, x,y)
     def updateSprite(self,newSprite):
         global canvas
         for line in self.sprite:
